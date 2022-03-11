@@ -1,0 +1,14 @@
+{% block body %}
+
+    <h1>Create your List Here</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <input type="text" name="title" placeholder="Title" required> <br><br>
+
+        <textarea placeholder="Description" name="description" rows="10" required></textarea> <br><br>
+        
+        <input type="submit" value="Create">
+    </form>
+{% endblock %}
